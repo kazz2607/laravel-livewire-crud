@@ -37,8 +37,8 @@ class Notes extends Component
         if ($note) {
             $note->delete();
             Flux::modal('delete-note')->close();
-            session()->flash('message', 'Note deleted successfully.');
-            // Redirect to the notes page or show a success message
+            // session()->flash('message', 'Note deleted successfully.');
+            // // Redirect to the notes page or show a success message
             $this->redirect(route('notes'), navigate: true);
         }
     }
